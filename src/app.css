@@ -8,6 +8,7 @@
 	--r-main-font: 'Rubik Variable';
 	--r-heading-font: 'Rubik Variable';
 	--r-code-font: 'JetBrains Mono';
-	--r-link-color: blue;
-	--r-link-color-hover: 'blue';
+	--r-inline-code-color: black;
+	--r-link-color: #5563b4;
+	--r-link-color-hover: #929ee2;
 }
