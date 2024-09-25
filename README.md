@@ -1,38 +1,37 @@
-# create-svelte
+# svelte-revealjs-slides-template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A template project to be cloned to create [reveal.js](https://revealjs.com) slides, using [SvelteKit](https://kit.svelte.dev).
+
+This is based on [Create Beautiful Presentations With Svelte](https://www.youtube.com/watch?v=67lqa5kTQkA) by [Joy of Code](https://www.youtube.com/@JoyofCodeDev)
 
 ## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+Clone the repo, then run
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+pnpm i
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've installed dependencies, start a development server:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm dev --open
 ```
+
+Omit the `--open` option if you don't want to launch a new browser.
+
+The main presentation file is in [`presentation.svelte`](./src/lib/deck/presentation.svelte), start from there to edit your slides.
+
+Refer to the [reveal.js docs](https://revealjs.com) for more documentation.
 
 ## Building
 
-To create a production version of your app:
+To create a production version of your slides:
 
 ```bash
-npm run build
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+You can preview the production build with `pnpm preview`.
