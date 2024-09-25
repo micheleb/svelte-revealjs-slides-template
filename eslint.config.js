@@ -1,8 +1,9 @@
 import js from '@eslint/js';
-import ts from 'typescript-eslint';
-import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
+import perfectionist from 'eslint-plugin-perfectionist';
+import svelte from 'eslint-plugin-svelte';
 import globals from 'globals';
+import ts from 'typescript-eslint';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -11,6 +12,13 @@ export default [
 	...svelte.configs['flat/recommended'],
 	prettier,
 	...svelte.configs['flat/prettier'],
+	{
+		plugins: { perfectionist },
+		rules: {
+			'perfectionist/sort-imports': 'error',
+			'perfectionist/sort-svelte-attributes': 'error'
+		}
+	},
 	{
 		languageOptions: {
 			globals: {
