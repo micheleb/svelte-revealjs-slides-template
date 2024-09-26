@@ -4,7 +4,10 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {},
+			fontFamily: {
+				mono: ['"JetBrains Mono"']
+			}
 	},
 
 	// eslint-disable-next-line @typescript-eslint/no-require-imports
